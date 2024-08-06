@@ -99,25 +99,26 @@ export async function onRequest(context) {
             background-color: #0056b3; 
             transform: scale(1.05);
           }
+          .contact-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+          }
+          .contact-button, .telegram-button {
+            width: 200px; /* Ensuring same size */
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+          }
           .contact-button {
             background-color: #a9a9a9; /* Darker gray for email */
             color: black;
-            border: none;
-            border-radius: 8px;
-            padding: 5px 10px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            margin: 5px 0;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            width: 120px; /* Ensuring same size */
-            justify-content: center;
-          }
-          .contact-button img {
-            margin-right: 5px;
-            width: 20px; /* Default size */
-            height: 20px; /* Default size */
           }
           .contact-button:hover {
             background-color: #808080;
@@ -126,25 +127,15 @@ export async function onRequest(context) {
           .telegram-button {
             background-color: #333; /* Dark gray for Telegram */
             color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 5px 10px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            margin: 5px 0;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            width: 120px; /* Ensuring same size */
-            justify-content: center;
-          }
-          .telegram-button img {
-            width: 20px; /* Default size */
-            height: 20px; /* Default size */
           }
           .telegram-button:hover {
             background-color: #555;
             transform: scale(1.05);
+          }
+          .contact-button img, .telegram-button img {
+            margin-right: 5px;
+            width: 20px; /* Default size */
+            height: 20px; /* Default size */
           }
           .bottom-center {
             position: absolute;
@@ -199,9 +190,9 @@ export async function onRequest(context) {
           <input type="text" name="url" placeholder="Enter URL" required aria-label="Enter URL">
           <button type="submit">Go</button>
         </form>
-        <div class="bottom-center">
-          <p><b>DMCA :</b> <a href="mailto:me@minitor.eu.org" class="contact-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/200px-Gmail_icon_%282020%29.svg.png" alt="Gmail Icon"> Email Me</a></p>
-          <p><b>Contact me on Telegram :</b> <a href="https://t.me/Minitor" class="telegram-button"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon"></a></p>
+        <div class="contact-buttons">
+          <a href="mailto:me@minitor.eu.org" class="contact-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/200px-Gmail_icon_%282020%29.svg.png" alt="Gmail Icon"> Email Me</a>
+          <a href="https://t.me/Minitor" class="telegram-button"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon"> Contact me on Telegram</a>
         </div>
         <footer>
           <p> 2024 CF Web Proxy. All rights reserved.</p>
