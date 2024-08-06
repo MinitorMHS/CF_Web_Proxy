@@ -15,7 +15,7 @@ export async function onRequest(context) {
   // Fetch the blacklist from a remote text file
   let blockedDomains = [];
   try {
-    const response = await fetch('https://raw.githubusercontent.com/MinitorMHS/Logo/main/blacklist.txt');
+    const response = await fetch('https://raw.githubusercontent.com/MinitorMHS/CF_Web_Proxy/main/Functions/blacklist.txt');
     if (response.ok) {
       const blacklistContent = await response.text();
       blockedDomains = blacklistContent.split('\n').filter(domain => domain.trim() !== '');
