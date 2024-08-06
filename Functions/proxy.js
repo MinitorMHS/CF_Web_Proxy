@@ -28,7 +28,7 @@ export async function onRequest(context) {
   
   const requestedDomain = new URL(originalUrl).hostname;
   if (blockedDomains.includes(requestedDomain)) {
-    return new Response('This domain is not allowed to be proxied', { status: 403 });
+    return new Response('This domain is not allowed', { status: 403 });
   }
 
   const filename = originalUrl.split('/').pop();
