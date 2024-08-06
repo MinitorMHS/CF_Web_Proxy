@@ -191,7 +191,7 @@ export async function onRequest(context) {
           <button type="submit">Go</button>
         </form>
         <div class="contact-buttons">
-          <a href="mailto:me@minitor.eu.org" class="contact-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/200px-Gmail_icon_%282020%29.svg.png" alt="Gmail Icon"> Email Me</a>
+          <a href="mailto:me@minitor.eu.org" class="contact-button"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/200px-Gmail_icon_%282020%29.svg.png" alt="Gmail Icon"> Email Me for DMCA</a>
           <a href="https://t.me/Minitor" class="telegram-button"><img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram Icon"> Contact me on Telegram</a>
         </div>
         <footer>
