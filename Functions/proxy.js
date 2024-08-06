@@ -37,9 +37,9 @@ export async function onRequest(context) {
   // Check the hostname and modify the links
   let proxiedUrl;
   let watchUrl;
-  if (url.hostname === 'dl.fastgozar.space') {
-    proxiedUrl = `https://edge05.66065.ir.cdn.ir/download?data=${encodedData}`;
-    watchUrl = `https://edge05.66065.ir.cdn.ir/watch?data=${encodedData}`;
+  if (url.hostname === 'your-custom-domain.com') {
+    proxiedUrl = `https://your-domain.ir.cdn.ir/download?data=${encodedData}`;
+    watchUrl = `https://your-domain.ir.cdn.ir/watch?data=${encodedData}`;
   } else {
     proxiedUrl = `${url.origin}/download?data=${encodedData}`;
     watchUrl = `${url.origin}/watch?data=${encodedData}`;
