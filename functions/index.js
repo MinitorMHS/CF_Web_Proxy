@@ -5,9 +5,9 @@ export async function onRequest(context) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Web Proxy</title>
         <meta name="description" content="This website helps you encode and fasten your download links.">
-        <meta property="og:title" content="نیم بها کننده لینک">
-        <meta property="og:description" content="با کمک این وب سایت لینک های دانلود خود را نیم بها کنید">
-        <meta property="og:url" content="https://iminitor.ir">
+        <meta property="og:title" content="CF Web Proxy">
+        <meta property="og:description" content="A web proxy solution built on Cloudflare Network">
+        <meta property="og:url" content="https://your-domain.com">
         <meta property="og:type" content="website">
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
