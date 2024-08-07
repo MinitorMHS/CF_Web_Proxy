@@ -182,7 +182,7 @@ export async function onRequest(context) {
           <a href="https://github.com/MinitorMHS/CF_web_proxy">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub Icon" class="icon">
           </a>
-          <button class="star-button" onclick="window.open('https://github.com/MinitorMHS/CF_proxy/stargazers')">
+          <button class="star-button" onclick="window.open('https://github.com/MinitorMHS/CF_Web_Proxy/stargazers')">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Plain_Yellow_Star.png" alt="Star Icon" class="icon"> Give a Star
           </button>
         </div>
