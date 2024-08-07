@@ -14,6 +14,7 @@ Iranian users, please use this URL to access the service with half bandwidth (Ni
 - **Watch Functionality**: Stream content directly through the proxy.
 - **URL Encoding**: Automatically encodes URLs to base64 for secure and efficient processing.
 - **Responsive Design**: Optimized for various devices and screen sizes.
+- **Blacklist functionality**: You can add various websites to the blastlist.txt to block those domains to be proxied.
 
 ## Installation
 
