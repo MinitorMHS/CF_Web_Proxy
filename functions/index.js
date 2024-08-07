@@ -7,7 +7,7 @@ export async function onRequest(context) {
         <meta name="description" content="This website helps you encode and fasten your download links.">
         <meta property="og:title" content="CF Web Proxy">
         <meta property="og:description" content="A web proxy solution built on Cloudflare Network">
-        <meta property="og:url" content="https://your-domain.com">
+        <meta property="og:url" content="https://cf-web-proxy.pages.dev">
         <meta property="og:type" content="website">
         <style>
           @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
