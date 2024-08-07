@@ -12,7 +12,7 @@ Iranian users, please use this URL to access the service with half bandwidth (Ni
 
 - **Download Functionality**: Securely download content through the proxy with the ability to pause downloads.
 - **Watch Functionality**: Stream content directly through the proxy.
-- **URL Encoding**: Automatically encodes URLs for secure and efficient processing.
+- **URL Encoding**: Automatically encodes URLs to base64 for secure and efficient processing.
 - **Responsive Design**: Optimized for various devices and screen sizes.
 
 ## Installation
