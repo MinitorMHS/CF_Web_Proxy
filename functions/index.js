@@ -176,7 +176,7 @@ export async function onRequest(context) {
       <body>
         <div class="about">
           <h2>About</h2>
-          <p>This website helps you encode and fasten your download links</p>
+          <p>This website helps you encode and secure your download links</p>
         </div>
         <div class="github-star">
           <a href="https://github.com/MinitorMHS/CF_web_proxy">
