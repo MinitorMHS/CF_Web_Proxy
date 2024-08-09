@@ -17,22 +17,19 @@ export async function onRequest(context) {
     }
 
     const newHeaders = new Headers(response.headers);
-    const contentType = newHeaders.get('Content-Type');
-
     if (response.headers.get('Set-Cookie')) {
       newHeaders.append('Set-Cookie', response.headers.get('Set-Cookie'));
     }
 
+    const contentType = newHeaders.get('Content-Type');
     if (contentType && contentType.includes('text/html')) {
       const originalText = await response.text();
       const proxiedText = originalText
         .replace(/(href|src|action)="([^"]*)"/g, (match, p1, p2) => {
-          if (p2.startsWith('http') || p2.startsWith('//')) {
-            return `${p1}="/proxy/${encodeURIComponent(btoa(p2))}"`;
-          } else {
-            const newUrl = new URL(p2, decodedUrl).href;
-            return `${p1}="/watch?data=${encodeURIComponent(btoa(JSON.stringify({ url: newUrl })))}"`;
-          }
+          const newUrl = p2.startsWith('http') || p2.startsWith('//') 
+            ? `${p1}="/proxy/${encodeURIComponent(btoa(p2))}"`
+            : `${p1}="/watch?data=${encodeURIComponent(btoa(JSON.stringify({ url: new URL(p2, decodedUrl).href })))}"`;
+          return newUrl;
         })
         .replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gi, (match, p1) => {
           return `<script>${p1.replace(/document\.location/g, 'window.location')}</script>`;
