@@ -20,6 +20,7 @@ Iranian users, please use this URL to access the service with half bandwidth (Ni
 
 For detailed installation instructions, please refer to the following files:
 - [Installation for Cloudflare Pages (recommend)](installation-pages.md)
+
 - [Installation for Cloudflare Workers](installation-worker.md)
 
 ## Usage
