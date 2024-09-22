@@ -6,7 +6,7 @@ CF_Web_Proxy is a web proxy solution built on Cloudflare network. This project a
 
 ## Note for Iranian Users
 
-Iranian users, please use this URL to access the service with half bandwidth (Nim baha): [edge05.66065.ir.cdn.ir](http://edge05.66065.ir.cdn.ir)
+Iranian users, please use this URL to access the service with half bandwidth (Nim baha): [edge08.66065.ir.cdn.ir](http://edge05.66065.ir.cdn.ir)
 
 ## Features
 
